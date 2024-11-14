@@ -13,7 +13,6 @@ const App = () => {
     if (isPlaying) {
       sound.stop();
     } else {
-      // Load the sound file (replace with your own music file path or URL)
       const track = new Sound('your-audio-file.mp3', Sound.MAIN_BUNDLE, (error) => {
         if (error) {
           console.log('Failed to load the sound', error);
