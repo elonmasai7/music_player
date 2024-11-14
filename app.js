@@ -27,7 +27,7 @@ const App = () => {
       setSound(track);
     }
     setIsPlaying(!isPlaying);
-    // Trigger button scaling animation
+    
     Animated.spring(animationValue, {
       toValue: isPlaying ? 0.8 : 1.2,
       friction: 2,
