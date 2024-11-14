@@ -6,9 +6,9 @@ import * as Animatable from 'react-native-animatable';
 const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [sound, setSound] = useState(null);
-  const [animationValue] = useState(new Animated.Value(0)); // Animation for scaling button
+  const [animationValue] = useState(new Animated.Value(0)); 
 
-  // Handle play/pause logic
+  
   const playPause = () => {
     if (isPlaying) {
       sound.stop();
